@@ -9,7 +9,12 @@ import lombok.NoArgsConstructor;
 @Getter
 @Entity
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
-@Table(name = "menus")
+@Table(
+        name = "menus",
+        indexes = {
+                @Index(name = "idx_menu_name", columnList = "name")
+        }
+)
 public class Menu extends BaseEntity {
 
     @Id

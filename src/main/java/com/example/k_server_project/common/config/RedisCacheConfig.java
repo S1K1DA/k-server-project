@@ -35,7 +35,7 @@ public class RedisCacheConfig {
                 .serializeValuesWith(
                         RedisSerializationContext.SerializationPair.fromSerializer(
                                 new GenericJackson2JsonRedisSerializer(mapper)))
-                .entryTtl(Duration.ofMinutes(10));
+                .entryTtl(Duration.ofMinutes(30));
 
         // 캐시별 설정
         Map<String, RedisCacheConfiguration> cacheConfigs = new HashMap<>();
