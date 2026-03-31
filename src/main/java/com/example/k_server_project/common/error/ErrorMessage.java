@@ -15,6 +15,12 @@ public class ErrorMessage {
     // 주문 관련
     public static final String MSG_NOT_FOUND_ORDER = "존재하지 않는 주문입니다.";
 
+    // 결제 관련
+    public static final String MSG_DUPLICATE_PAYMENT = "이미 처리된 결제입니다.";
+    public static final String MSG_PAYMENT_NOT_FOUND = "존재하지 않는 결제입니다.";
+    public static final String MSG_PAYMENT_AMOUNT_MISMATCH = "결제 금액이 일치하지 않습니다.";
+    public static final String MSG_PAYMENT_FAILED = "결제 검증에 실패했습니다.";
+
     // 공통
     public static final String MSG_NOT_VALID_VALUE = "올바르지 않은 요청 값입니다.";
     public static final String MSG_DATA_INSERT_FAIL = "데이터 저장에 실패했습니다.";

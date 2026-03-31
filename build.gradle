@@ -52,8 +52,7 @@ dependencies {
     // Kafka
     implementation 'org.springframework.kafka:spring-kafka'
 
-    // PortOne
-    implementation 'io.portone:server-sdk:0.0.5'
+    implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
 
 }
 
