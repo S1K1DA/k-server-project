@@ -27,6 +27,14 @@ public class Menu extends BaseEntity {
     @Column(name = "price", nullable = false)
     private Long price;
 
+    @Column(name = "order_count", nullable = false)
+    private Long orderCount = 0L;
+
+    // 주문수 증가 메서드
+    public void incrementOrderCount() {
+        this.orderCount++;
+    }
+
     // 메뉴 생성
     public static Menu createMenu(String name, Long price) {
         Menu menu = new Menu();
