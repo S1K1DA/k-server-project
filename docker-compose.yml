@@ -115,6 +115,25 @@ services:
     networks:
       - kafka-net
 
+  # --------------------------
+  # influxdb + grafana
+  # --------------------------
+  influxdb:
+    image: influxdb:1.8
+    container_name: influxdb
+    ports:
+      - "8086:8086"
+    networks:
+      - kafka-net
+
+  grafana:
+    image: grafana/grafana:latest
+    container_name: grafana
+    ports:
+      - "3000:3000"
+    networks:
+      - kafka-net
+
 volumes:
   kafka1_data:
   kafka2_data:
